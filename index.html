@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-code"></i>
+            <span>CodeQuiz</span>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-item active" onclick="loadHome()"><i class="fas fa-home"></i> Home</a>
+            <a href="#" class="nav-item" onclick="loadQuiz('java')"><i class="fab fa-java"></i> Java</a>
+            <a href="#" class="nav-item" onclick="loadQuiz('c')"><i class="fas fa-copyright"></i> C</a>
+            <a href="#" class="nav-item" onclick="loadQuiz('python')"><i class="fab fa-python"></i> Python</a>
+        </div>
+        <div class="login-container">
+            <a href="#" class="login-btn"><i class="fas fa-user"></i> <span>Login</span></a>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="page-container">
+        <div id="content" class="content">
+            <!-- Home Content (Default) -->
+            <div class="home-content">
+                <div class="hero-section">
+                    <h1>Master Your Coding Skills</h1>
+                    <p>Challenge yourself with interactive quizzes in Java, C, and Python</p>
+                    <div class="action-buttons">
+                        <button class="primary-btn" onclick="loadQuiz('java')">Start Java Quiz</button>
+                        <button class="secondary-btn" onclick="loadQuiz('python')">Try Python</button>
+                    </div>
+                </div>
+                <div class="features">
+                    <div class="feature-card">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <h3>Interactive Quizzes</h3>
+                        <p>Test your knowledge with our carefully crafted questions</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Track Progress</h3>
+                        <p>Visualize your performance with detailed analytics</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Earn Badges</h3>
+                        <p>Get rewarded for your achievements and progress</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 CodeQuiz. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
